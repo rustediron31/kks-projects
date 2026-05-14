@@ -1,4 +1,16 @@
+import livingRoom1 from './images/living-room-1.jpg'
+import livingRoom2 from './images/living-room-2.jpg'
+import livingRoom3 from './images/living-room-3.jpg'
+import livingRoom4 from './images/living-room-4.jpg'
 
+import kitchen1 from './images/kitchen-1.jpg'
+import kitchen2 from './images/kitchen-2.jpg'
+
+import ceiling1 from './images/ceiling-design-1.jpg'
+import ceiling2 from './images/ceiling-design-2.jpg'
+
+import wardrobe1 from './images/wardrobe-1.jpg'
+import wardrobe2 from './images/wardrobe-2.jpg'
 
 export default function KKSProjectsWebsite() {
   const services = [
@@ -61,12 +73,16 @@ export default function KKSProjectsWebsite() {
   ];
 
   const floatingImages = [
-    'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1502005097973-6a7082348e28?q=80&w=1200&auto=format&fit=crop',
+  livingRoom1,
+  livingRoom2,
+  livingRoom3,
+  livingRoom4,
+  kitchen1,
+  kitchen2,
+  ceiling1,
+  ceiling2,
+  wardrobe1,
+  wardrobe2,
   ];
 
   return (
