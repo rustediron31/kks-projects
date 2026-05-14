@@ -1,3 +1,6 @@
+import { useState } from 'react'
+
+
 import livingRoom1 from './images/living-room-1.jpg'
 import livingRoom2 from './images/living-room-2.jpg'
 import livingRoom3 from './images/living-room-3.jpg'
@@ -13,6 +16,8 @@ import wardrobe1 from './images/wardrobe-1.jpg'
 import wardrobe2 from './images/wardrobe-2.jpg'
 
 export default function KKSProjectsWebsite() {
+  const [menuOpen, setMenuOpen] = useState(false)
+  
   const services = [
     {
       title: 'Interior Fitout Design',
@@ -106,14 +111,58 @@ export default function KKSProjectsWebsite() {
             </div>
           </div>
 
-          <nav className="hidden md:flex gap-8 text-sm uppercase tracking-wider">
-            <a href="#home" className="hover:text-orange-400 transition">Home</a>
-            <a href="#services" className="hover:text-orange-400 transition">Services</a>
-            <a href="#projects" className="hover:text-orange-400 transition">Projects</a>
-            <a href="#contact" className="hover:text-orange-400 transition">Contact</a>
-          </nav>
+         <nav className="hidden md:flex gap-8 text-sm uppercase tracking-wider">
+  <a href="#home" className="hover:text-orange-400 transition">
+    Home
+  </a>
+
+  <a href="#services" className="hover:text-orange-400 transition">
+    Services
+  </a>
+
+  <a href="#contact" className="hover:text-orange-400 transition">
+    Contact
+  </a>
+</nav>
+
+<button
+  className="md:hidden text-3xl"
+  onClick={() => setMenuOpen(!menuOpen)}
+>
+  ☰
+</button>
+
+
         </div>
       </header>
+
+      {menuOpen && (
+  <div className="md:hidden bg-black/95 backdrop-blur-lg px-6 py-8 space-y-6 text-center border-t border-white/10">
+    <a
+      href="#home"
+      className="block text-lg hover:text-orange-400"
+      onClick={() => setMenuOpen(false)}
+    >
+      Home
+    </a>
+
+    <a
+      href="#services"
+      className="block text-lg hover:text-orange-400"
+      onClick={() => setMenuOpen(false)}
+    >
+      Services
+    </a>
+
+    <a
+      href="#contact"
+      className="block text-lg hover:text-orange-400"
+      onClick={() => setMenuOpen(false)}
+    >
+      Contact
+    </a>
+  </div>
+)}
 
       <section id="home" className="relative h-screen flex items-center justify-center px-6">
         <div
