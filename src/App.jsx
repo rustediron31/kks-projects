@@ -337,45 +337,6 @@ export default function KKSProjectsWebsite() {
         </div>
       </section>
 
-      <section id="projects" className="py-28 bg-[#111827]">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="flex flex-col md:flex-row justify-between items-center mb-16 gap-6">
-            <div>
-              <p className="text-orange-400 uppercase tracking-[5px] mb-4">Our Work</p>
-              <h2 className="text-4xl md:text-5xl font-bold">Recent Projects</h2>
-            </div>
-
-            <p className="text-gray-400 max-w-xl text-lg">
-              Delivering elegant residential interiors with premium finishing, modern aesthetics, functional space planning, and reliable execution.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
-              <div
-                key={index}
-                className="group relative overflow-hidden rounded-[30px] shadow-2xl"
-              >
-                <img
-                  src={floatingImages[index % floatingImages.length]}
-                  alt={project}
-                  className="w-full h-[420px] object-cover group-hover:scale-110 transition duration-700"
-                />
-
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
-
-                <div className="absolute bottom-0 p-8">
-                  <p className="text-orange-400 uppercase tracking-[4px] text-sm mb-2">
-                    Project {index + 1}
-                  </p>
-                  <h3 className="text-3xl font-bold">{project}</h3>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="py-28 bg-[#0B1120]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
