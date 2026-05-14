@@ -427,32 +427,46 @@ export default function KKSProjectsWebsite() {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="bg-black/30 border border-white/10 rounded-2xl px-6 py-4 outline-none"
-              />
+            <form
+  action="https://formspree.io/f/mdabvqpd"
+  method="POST"
+  className="space-y-8"
+>
+  <div className="grid md:grid-cols-2 gap-8">
+    <input
+      type="text"
+      name="name"
+      placeholder="Your Name"
+      required
+      className="bg-black/30 border border-white/10 rounded-2xl px-6 py-4 outline-none focus:border-orange-400"
+    />
 
-              <input
-                type="email"
-                placeholder="Your Email"
-                className="bg-black/30 border border-white/10 rounded-2xl px-6 py-4 outline-none"
-              />
-            </div>
+    <input
+      type="email"
+      name="email"
+      placeholder="Your Email"
+      required
+      className="bg-black/30 border border-white/10 rounded-2xl px-6 py-4 outline-none focus:border-orange-400"
+    />
+  </div>
 
-            <textarea
-              rows="6"
-              placeholder="Tell us about your project"
-              className="w-full mt-8 bg-black/30 border border-white/10 rounded-2xl px-6 py-4 outline-none"
-            />
+  <textarea
+    rows="6"
+    name="message"
+    placeholder="Tell us about your project"
+    required
+    className="w-full bg-black/30 border border-white/10 rounded-2xl px-6 py-4 outline-none focus:border-orange-400"
+  />
 
-            <div className="flex justify-center mt-8">
-              <button className="bg-orange-500 hover:bg-orange-600 transition px-10 py-4 rounded-2xl font-semibold shadow-xl">
-                Send Message
-              </button>
-            </div>
-
+  <div className="flex justify-center">
+    <button
+      type="submit"
+      className="bg-orange-500 hover:bg-orange-600 transition px-10 py-4 rounded-2xl font-semibold shadow-xl"
+    >
+      Send Message
+    </button>
+  </div>
+</form>
             <div className="mt-14">
               <h3 className="text-center text-2xl font-semibold mb-8">
                 Connect With Us
