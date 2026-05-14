@@ -1,3 +1,7 @@
+
+import heroImage from './images/hero-image.jpg'
+
+
 import { useState } from 'react'
 
 
@@ -168,8 +172,11 @@ export default function KKSProjectsWebsite() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage:
-              'url(https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop)',
+            backgroundImage: `url(${heroImage})`,
+            backgroundBlendMode: 'overlay',
+            backgroundColor: 'rgba(0,0,0,0.65)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
           }}
         />
 
