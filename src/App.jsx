@@ -1,4 +1,6 @@
 
+import { motion } from 'framer-motion'
+
 import heroImage from './images/hero-image.jpg'
 
 
@@ -251,7 +253,13 @@ export default function KKSProjectsWebsite() {
       </section>
 
       <section className="py-24 bg-black">
-        <div className="max-w-7xl mx-auto px-6">
+        <motion.div
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="max-w-7xl mx-auto px-6"
+        > 
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div className="bg-white/5 border border-white/10 rounded-3xl p-8 shadow-xl">
               <h3 className="text-4xl font-extrabold text-orange-400 mb-3">50+</h3>
@@ -281,7 +289,7 @@ export default function KKSProjectsWebsite() {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
 
       <section className="py-28 bg-[#111827]">
