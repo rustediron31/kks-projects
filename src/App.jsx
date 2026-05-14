@@ -235,9 +235,9 @@ export default function KKSProjectsWebsite() {
           {floatingImages.map((image, index) => (
             <div
               key={index}
-              className="w-[280px] h-[380px] rounded-[30px] overflow-hidden shadow-2xl border border-white/10 transform hover:scale-105 transition duration-500"
+              className=""
             >
-              <img src={image} alt="Project" className="w-full h-full object-cover" />
+              <img src={image} alt="Project" className="w-full h-56 object-cover rounded-3xl shadow-2xl" />
             </div>
           ))}
         </div>
